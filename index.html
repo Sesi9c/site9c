@@ -27,10 +27,14 @@
         <p>Mais novidades na próxima atualização!</p>
     </footer>
 
-    <script>
-        function showPopup() {
-            alert("Aqui está o primeiro projeto do 9ºC — Esteira de qualidade na indústria");
-        }
-    </script>
-</body>
-</html>
+<div class="imagem-projeto">
+  <img src="foto_esteira.png" alt="Projeto Esteira" onclick="abrirModal()" />
+</div>
+
+<div id="modal" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar" onclick="fecharModal()">&times;</span>
+    <h3>Aqui está o primeiro projeto do 9ºC:</h3>
+    <p><strong>Esteira de qualidade na indústria</strong></p>
+  </div>
+</div>

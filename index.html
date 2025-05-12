@@ -1,33 +1,36 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bem-vindo ao 9ºC</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>9ºC - Bem-vindo</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header class="hero">
-    <div class="hero-text">
-      <h1>Bem-vindo ao 9ºC</h1>
-      <p>Nosso espaço de aprendizado, amizade e crescimento!</p>
-    </div>
-    <div class="hero-image">
-      <img src="foto9c.png" alt="Foto da turma do 9ºC">
-    </div>
-  </header>
+    <header>
+        <div class="container">
+            <h1>Bem-vindo ao 9ºC</h1>
+            <p>Nosso espaço de aprendizado, amizade e crescimento!</p>
+            <img src="foto9c.png" alt="Foto da turma" class="main-image" />
+        </div>
+    </header>
 
-  <section class="projects">
-    <h2>Aqui vêm nossos projetos</h2>
-    <div class="project-grid">
-      <div class="project-box">Está por vir</div>
-      <div class="project-box">Está por vir</div>
-      <div class="project-box">Está por vir</div>
-    </div>
-  </section>
+    <section class="projects">
+        <h2>Projetos</h2>
+        <div class="project-item">
+            <img src="foto_esteira.png" alt="Projeto Esteira" onclick="showPopup()" />
+        </div>
+    </section>
 
-  <footer class="footer">
-    <p>Na próxima atualização, mais novidades da turma do 9ºC!</p>
-  </footer>
+    <footer>
+        <p>Mais novidades na próxima atualização!</p>
+    </footer>
+
+    <script>
+        function showPopup() {
+            alert("Aqui está o primeiro projeto do 9ºC — Esteira de qualidade na indústria");
+        }
+    </script>
 </body>
 </html>

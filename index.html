@@ -1,51 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>9ºC - Bem-vindo</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bem-vindo ao 9ºC</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Bem-vindo ao 9ºC</h1>
-            <p>Nosso espaço de aprendizado, amizade e crescimento!</p>
-            <img src="foto9c.png" alt="Foto da turma" class="main-image" />
-        </div>
-    </header>
+  <header class="cabecalho">
+    <div class="container-capa">
+      <div class="texto-capa">
+        <h1>Bem-vindo ao 9ºC</h1>
+        <p>Nosso espaço de aprendizado, amizade e crescimento!</p>
+      </div>
+      <img src="foto_turma.png" alt="Turma do 9ºC" class="foto-turma">
+    </div>
+  </header>
 
-    <section class="projects">
-        <h2>Projetos</h2>
-        <div class="project-item">
-            <img src="foto_esteira.png" alt="Projeto Esteira" onclick="showPopup()" />
-        </div>
-    </section>
+  <section class="projetos">
+    <h2>Projetos</h2>
+    <div class="imagem-projeto">
+      <img src="foto_esteira.png" alt="Projeto Esteira" onclick="abrirModal()">
+      <p>Clique na esteira para ver nosso projeto</p>
+    </div>
+  </section>
 
-    <footer>
-        <p>Mais novidades na próxima atualização!</p>
-    </footer>
+  <footer class="rodape">
+    <p>Na próxima atualização, mais novidades do 9ºC virão!</p>
+  </footer>
 
-<div class="imagem-projeto">
-  <img src="foto_esteira.png" alt="Projeto Esteira" onclick="abrirModal()" />
-</div>
-
-<div id="modal" class="modal">
-  <div class="modal-conteudo">
-    <span class="fechar" onclick="fecharModal()">&times;</span>
-    <h3>Aqui está o primeiro projeto do 9ºC:</h3>
-    <p><strong>Esteira de qualidade na indústria</strong></p>
+  <!-- Modal -->
+  <div id="modal" class="modal">
+    <div class="modal-conteudo">
+      <span class="fechar" onclick="fecharModal()">&times;</span>
+      <h3>Aqui está o primeiro projeto do 9ºC:</h3>
+      <p><strong>Esteira de qualidade na indústria</strong></p>
+    </div>
   </div>
-</div>
-<script>
-  function abrirModal() {
-    document.getElementById("modal").style.display = "flex";
-    document.body.classList.add("blur");
-  }
 
-  function fecharModal() {
-    document.getElementById("modal").style.display = "none";
-    document.body.classList.remove("blur");
-  }
-</script>
+  <script>
+    function abrirModal() {
+      document.getElementById("modal").style.display = "flex";
+    }
+
+    function fecharModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

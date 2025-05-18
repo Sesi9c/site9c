@@ -1,51 +1,27 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bem-vindo ao 9ºC</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9ºC - Página Inicial</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="cabecalho">
-    <div class="container-capa">
-      <div class="texto-capa">
+    <header>
+        <img src="images/sesi-logo.png" alt="Logo SESI" class="logo">
         <h1>Bem-vindo ao 9ºC</h1>
         <p>Nosso espaço de aprendizado, amizade e crescimento!</p>
-      </div>
-      <img src="foto_turma.png" alt="Turma do 9ºC" class="foto-turma">
-    </div>
-  </header>
-
-  <section class="projetos">
-    <h2>Projetos</h2>
-    <div class="imagem-projeto">
-      <img src="foto_esteira.png" alt="Projeto Esteira" onclick="abrirModal()">
-      <p>Clique na esteira para ver nosso projeto</p>
-    </div>
-  </section>
-
-  <footer class="rodape">
-    <p>Na próxima atualização, mais novidades do 9ºC virão!</p>
-  </footer>
-
-  <!-- Modal -->
-  <div id="modal" class="modal">
-    <div class="modal-conteudo">
-      <span class="fechar" onclick="fecharModal()">&times;</span>
-      <h3>Aqui está o primeiro projeto do 9ºC:</h3>
-      <p><strong>Esteira de qualidade na indústria</strong></p>
-    </div>
-  </div>
-
-  <script>
-    function abrirModal() {
-      document.getElementById("modal").style.display = "flex";
-    }
-
-    function fecharModal() {
-      document.getElementById("modal").style.display = "none";
-    }
-  </script>
+    </header>
+    <section class="hero">
+        <img src="images/turma.png" alt="Foto da turma" class="hero-img">
+    </section>
+    <section class="projetos">
+        <h2>Projetos</h2>
+        <button onclick="window.open('esteira.html', '_blank')">Abrir projeto da esteira</button>
+    </section>
+    <footer>
+        <p>Em breve mais atualizações...</p>
+    </footer>
 </body>
 </html>

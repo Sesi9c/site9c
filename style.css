@@ -1,100 +1,72 @@
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f8f9fa;
-  color: #333;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #f4f4f4, #e8f0fe);
+    margin: 0;
+    padding: 0;
+    color: #333;
 }
 
-.cabecalho {
-  padding: 40px 20px;
-  background: #ffffff;
-  display: flex;
-  justify-content: center;
+header {
+    background-color: #004080;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-.container-capa {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 30px;
-  max-width: 1000px;
+header img {
+    width: 80px;
+    float: left;
+    margin-left: 1rem;
 }
 
-.texto-capa h1 {
-  color: #1a73e8;
-  font-size: 36px;
+main {
+    padding: 2rem;
+    text-align: center;
 }
 
-.texto-capa p {
-  font-size: 18px;
+footer {
+    background-color: #004080;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
 
-.foto-turma {
-  width: 350px;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.projetos {
-  text-align: center;
-  padding: 50px 20px;
+button:hover {
+    background-color: #0052a3;
 }
 
-.projetos h2 {
-  font-size: 28px;
-  color: #1a73e8;
-  margin-bottom: 30px;
+.foto-turma img {
+    width: 90%;
+    max-width: 600px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.imagem-projeto img {
-  width: 300px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: transform 0.3s;
+.projeto-bg {
+    background: #f2f9ff;
+    padding: 2rem;
 }
 
-.imagem-projeto img:hover {
-  transform: scale(1.05);
-}
-
-.rodape {
-  background-color: #1a73e8;
-  color: white;
-  text-align: center;
-  padding: 20px;
-  margin-top: 50px;
-}
-
-/* Modal estilo com fundo desfocado */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, 0.2);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal-conteudo {
-  background: white;
-  padding: 30px 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  position: relative;
-}
-
-.fechar {
-  position: absolute;
-  top: 15px;
-  right: 20px;
-  font-size: 28px;
-  font-weight: bold;
-  cursor: pointer;
+.img-projeto {
+    width: 90%;
+    max-width: 500px;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
 }
